@@ -19,7 +19,7 @@ export const useBlackjack = () => {
 
 	const initializeGame = useCallback(async () => {
 		setLoading('initializing')
-		await delay(150000)
+		await delay(1500)
 
 		const newDeck = shuffleDeck(createDeck())
 		const playerCards = [
